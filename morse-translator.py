@@ -1,4 +1,4 @@
-def morse(message):
+def translate(message):
     encrypt =  {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
                 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
                 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
@@ -15,5 +15,6 @@ def morse(message):
     else:
         return ''.join(decrypt[i] for i in message.split()) # if message is a morse code, it decrypts it to a normal message
 
-print(morse('Hello. This is a sample test.')) # this will translate the normal message to morse code
-print(morse('.... . .-.. .-.. --- .-.-.- / - .... .. ... / .. ... / .- / ... .- -- .--. .-.. . / - . ... - .-.-.-')) # this will translate the normal message to morse code
+print(translate('Hello. This is a sample test.')) # this will translate the normal message to morse code
+print(translate('.... . .-.. .-.. --- .-.-.- / - .... .. ... / .. ... / .- / ... .- -- .--. .-.. . / - . ... - .-.-.-')) # this will translate the normal message to morse code
+# print(translate(input('The message you want to translate: ')))
